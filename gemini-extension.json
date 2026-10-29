@@ -1,0 +1,23 @@
+{
+  "name": "reddit-archive-history",
+  "version": "1.0.0",
+  "description": "Historical Reddit posts and comments by UTC date window and keyword, years back, from the PullPush and Arctic Shift archives. Hosted MCP server, bring your MCPize key.",
+  "mcpServers": {
+    "reddit-archive-history": {
+      "httpUrl": "https://reddit-archive-history.mcpize.run/mcp",
+      "headers": {
+        "Authorization": "Bearer ${MCPIZE_API_KEY}"
+      },
+      "timeout": 120000
+    }
+  },
+  "contextFileName": "GEMINI.md",
+  "settings": [
+    {
+      "name": "MCPize API key",
+      "description": "Your key for Reddit Archive: Historical Posts & Comments. Subscribe on MCPize (Free plan available) and copy the key from the server page.",
+      "envVar": "MCPIZE_API_KEY",
+      "sensitive": true
+    }
+  ]
+}
